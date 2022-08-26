@@ -1,0 +1,14 @@
+mvc = 모델 뷰 컨트롤 웹에서 = 테스트
+
+
+7/7 파일
+1. form 입력 (제목,내용,첨부파일) => file 저장
+<form action="/board/writeFormProc" method="post" enctype="multipart/form-data">
+
+2. /board/writeFormProc
+
+3. Board Controller => uri처리 => Service insert(req, resp);
+
+4. BoardService => req.getpa ☆☆ 전달값 전달받아야함 =>DAO 전달
+
+5. BoardDAO => inser() 처리

@@ -1,0 +1,120 @@
+/* layout */
+*{margin:0; padding:0; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+header{
+    width:100%;
+    height:100px;
+    background-color:gray;
+    /* position:fixed; */
+    position:relative;
+    /* z-index:100; */
+    line-height:50px; 
+   /*
+    width:100%;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index:100;
+    */
+    }
+    
+    main{
+    position:relative; 
+    /*position:absolute;*/
+    top:100px;  
+    text-align:center;
+    
+    }
+    
+    footer{
+    width:100%;
+    height:150px;
+    background-color:yellow;
+    position:relative;
+    top:100px;
+    text-align:center;
+   /*  line-height:10vh; */
+    }
+/* header */
+
+.navbar{
+     display: flex;
+     background-color: #263343;
+     justify-content: space-between; /* 가로공간을 분할 */
+     align-items: center;  /* 세로중앙정렬 */
+     padding: 8px 12px;
+}
+.navbar_logo{
+font-size: 24px;
+}
+
+.fa-accusoft{
+    color: #ff7f50;
+}
+.navbar_menu{
+color:white;
+list-style: none;
+display: flex;
+padding-left: 0;
+}
+.navbar_icon{
+color:white;
+list-style: none;
+display: flex;
+padding-left: 0;
+}
+
+
+
+.navbar_menu li{
+    padding: 8px 12px;
+    /* text-align: center;
+    width: 100%; */
+}
+
+.navbar_icon li{
+    padding: 8px 12px;
+}
+
+.navbar_menu li:hover{
+    background-color: #d49466;
+    border-radius: 4px;
+
+}
+
+.navbar_toogleBtn{
+    display: none;
+    position: absolute;
+    right:32px;
+    color:white;
+}
+
+.sitename{
+  text-decoration: none;
+  color: white;
+  font-size:100px;
+  
+}
+
+@media (max-width:768px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar_menu{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar_menu li{
+        text-align: center;
+        width: 100%;
+    }
+    .navbar_icon{
+        align-items: center;
+        width: 100%;
+        display: none;
+    }
+    .navbar_toogleBtn{
+        display: block; 
+    }
+}
